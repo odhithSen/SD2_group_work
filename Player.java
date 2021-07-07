@@ -2,29 +2,34 @@ public class Player {
     private String name;
     private int age;
     private String type;
-    private int[] statistics = new int[15];
+    private int[] statistics;
 
 
-    public Player(){
-        
+    public Player(String name, int age, String type, int[] statistics){
+        this.name = name;
+        this.age = age;
+        this.type = type;
+        this.statistics = statistics;
+
     }
 
 
-    public void getAverage() {
+    public double getAverage() {
         int total = 0;
+        double average;
         for (int i = 0; i < 15; i++) {
             total += statistics[i];
         }
 
         if (total > 0) {
-            double average = total / 15;
-            System.out.println("Bowling/ Batting Average: " + average);
-            //return average;
+            average = total / 15;
+            //System.out.println("Bowling/ Batting Average: " + average);
+            return average;
+
         } else {
             System.out.println("Average can not be calculated (total = 0)");
-
+            return 0.0;
         }
-
     }
 
     public void getPlayerDetails() {
@@ -33,22 +38,24 @@ public class Player {
         System.out.println("Type: " + type);
         for (int i = 0; i < 15; i++) {
             int score = statistics[i];
-            System.out.println("Match " + i + " : " + score);
+            System.out.println("Match " + (i+1) + " : " + score);
         }
     }
 
-    public void getBestPerformance() {
+    public int getBestPerformance() {
         int maxScore = 0;
         for (int i = 0; i < 15; i++) {
             if (maxScore < statistics[i]) {
                 maxScore = statistics[i];
             }
         }
-        System.out.println("Best performance :" + maxScore);
+        //System.out.println("Best performance :" + maxScore);
+        return maxScore;
     }
 
-    public void getPlayerType() {
-        System.out.println("Player type: " + type);
+    public String getPlayerType() {
+        //System.out.println("Player type: " + type);
+        return type;
     }
 
 }
