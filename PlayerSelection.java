@@ -21,6 +21,14 @@ public class PlayerSelection
 		{
 			System.out.println("");
 			
+			System.out.print("Enter 'A' to add a player");
+			System.out.print("Enter 'B' to display the best batsman");
+			System.out.print("Enter 'C' to display the best blower");
+			System.out.print("Enter 'D' to display the best keeper");
+			System.out.print("Enter 'E' to Exit");
+
+
+			
 			System.out.print("Enter menu option: ");
 			menuOption = UserInput.next();
 			
