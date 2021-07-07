@@ -19,6 +19,11 @@ public class PlayerSelection
 		{
 			System.out.println("");
 			
+			System.out.print("Enter menu option: ");
+			menuOption = UserInput.next();
+			
+			System.out.println("");
+			
 			if (menuOption.equals("A"))// Add a player
 			{
 				
