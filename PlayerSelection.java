@@ -21,6 +21,8 @@ public class PlayerSelection
 		{
 			System.out.println("");
 			
+			// <MENU>
+			
 			System.out.print("Enter menu option: ");
 			menuOption = UserInput.next();
 			
