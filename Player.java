@@ -1,19 +1,10 @@
 public class Player {
-    private String name;
-    private int age;
-    private String type;
-    private int[] statistics;
-
-
-    public Player(String name, int age, String type, int[] statistics){
-        this.name = name;
-        this.age = age;
-        this.type = type;
-        this.statistics = statistics;
 
     }
 
-
+    /** Calculate the average of the player scores.
+     * @return Return the average of the player scores.
+     */
     public double getAverage() {
         int total = 0;
         double average;
@@ -32,6 +23,8 @@ public class Player {
         }
     }
 
+    /** Print the player name, age, type, and statistics.
+      */
     public void getPlayerDetails() {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
@@ -42,6 +35,9 @@ public class Player {
         }
     }
 
+    /**Finding the maximum score by the player.
+     * @return Return the maximum score.
+     */
     public int getBestPerformance() {
         int maxScore = 0;
         for (int i = 0; i < 15; i++) {
@@ -53,6 +49,9 @@ public class Player {
         return maxScore;
     }
 
+    /**Return the player type.
+     * @return player type.
+     */
     public String getPlayerType() {
         //System.out.println("Player type: " + type);
         return type;
