@@ -28,11 +28,11 @@ public class PlayerSelection
 			{
 				
 			}
-			else if (menuOption.equals("B"))// Display to best batsmen
+			else if (menuOption.equals("B"))// Display two best batsmen
 			{
 				
 			}
-			else if (menuOption.equals("C"))// Display to best bowlers
+			else if (menuOption.equals("C"))// Display two best bowlers
 			{
 				
 			}
