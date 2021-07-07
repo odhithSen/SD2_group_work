@@ -8,7 +8,8 @@ public class PlayerSelection
 	public static void main(String[] args)
 	{
 		ArrayList <Player> toyList = new ArrayList<Player>();
-		String menuOption, playerName, playerAge, playerType;
+		String menuOption, playerName, playerType;
+		int playerAge;
 		double bowlingAverage, battingAverage;
 		
 		System.out.println("");
@@ -26,7 +27,14 @@ public class PlayerSelection
 			
 			if (menuOption.equals("A"))// Add a player
 			{
+				System.out.print("Enter new player name: ");
+				playerName = UserInput.next();
 				
+				System.out.print("Enter new player age: ");
+				playerAge = UserInput.nextInt();
+				
+				System.out.print("Enter new player type: ");
+				playerType = UserInput.next();
 			}
 			else if (menuOption.equals("B"))// Display two best batsmen
 			{
