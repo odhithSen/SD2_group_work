@@ -10,7 +10,6 @@ public class Player {
         this.age = age;
         this.type = type;
         this.statistics = statistics;
-
     }
 
 
