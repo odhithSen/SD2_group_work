@@ -8,6 +8,7 @@ public class PlayerSelection
 	public static void main(String[] args)
 	{
 		ArrayList <Player> toyList = new ArrayList<Player>();
-		String menuOption, playerName;
+		String menuOption, playerName, playerAge, playerType;
+		double bowlingAverage, battingAverage;
 	}
 }
