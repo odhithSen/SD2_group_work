@@ -1,4 +1,15 @@
 public class Player {
+      private String name;
+      private int age;
+      private String type;
+      private int[] statistics=new int[15];
+
+    public Player(String name,int age,String type,int[]statistics){
+        this.name=name;
+        this.age=age;
+        this.type=type;
+        this.statistics=statistics;
+
 
 }
 
